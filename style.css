@@ -1,0 +1,23 @@
+body{
+  background-color: #262323;
+}
+.content {
+ text-align: center;
+ margin-left: 5%;
+ color: beige;
+}
+.content form input{
+  width: 50%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #262323;
+  color: white;
+}
+.content form label select{
+  width: 50%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #262323;
+  color: white;
+}
+
