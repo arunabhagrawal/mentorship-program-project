@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anime-welc {
+            from {
+                padding-top: 0
+            }
+
+            to {
+                padding-top: 12%
+            }
+        }
+
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 75, 1) 45%, rgba(0, 212, 255, 1) 100%);
+            padding-top: 12%;
+            animation-name: anime-welc;
+            animation-duration: 2s;
+
+        }
+
+        body {
+            width: 500px;
+            text-align: center;
+            padding-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the registration page of Drawing Fest 2022
+        you will be redirected shortly</h1>
+    <script>
+        function redirect() {
+            window.location.href = 'index.html'
+        }
+        setTimeout(redirect, 4000)</script>
+</body>
+
+</html>

@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body-main">
 
     <div class="content">
         <h1>Welcome to the registration form of Drawing Fest 2022</h1>
-        <form class="form">
+        <form class="form" method="post" action="https://sheetdb.io/api/v1/4o7trflr66jd1">
             <h3>Name*</h3>
-            <input type="text" placeholder="Enter your name here" required="yes">
+            <input type="text" placeholder="Enter your name here" required="yes" name="data[name]">
             <h3>Email*</h3>
-            <input type="email" required="yes" placeholder="Enter your Email here">
+            <input type="email" required="yes" placeholder="Enter your Email here" name="data[email]">
             <h3>Date of Birth</h3>
-            <input type="date" required="yes" id="dob">
+            <input type="date" required="yes" id="dob" name="data[dob]">
 
             <h3>Gender</h3>
             <label>
-                <select name="" id="">
+                <select name="data[gender]" id="">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Null">Rather Not Specify</option>
                 </select>
             </label>
             <h3>Art Form</h3>
-            <label>
-                <select name="" id="art-form">
+            <label >
+                <select name="data[art-form]" id="art-form">
                     <option value="Sand art">Sand Art</option>
                     <option value="Painting">Painting</option>
                     <option value="Sketching">Sketching</option>
@@ -39,12 +39,12 @@
             </label>
         
             <h3>Sample Painting</h3>
-            <input type="file" name="" id="" accept=".png,.jpg,.jpeg">
+            <input type="file" name="data[sample-painting]" id="" accept=".png,.jpg,.jpeg">
             <input type="submit" value="Submit your registration">
         </form>
         <br>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
